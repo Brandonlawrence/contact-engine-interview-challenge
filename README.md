@@ -4,25 +4,31 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to install and run project
 
-Clone the repo to your local machine
-Open the project in your preferred IDE or editor
-Run ‘npm install’ to install dependencies
-Run ‘ng serve’ to run the application after ‘npm install’ has completed
+1) Clone the repo to your local machine
+
+2) Open the project in your preferred IDE or editor
+
+3) Run ‘npm install’ to install dependencies
+
+4) Run ‘ng serve’ to run the application after ‘npm install’ has completed
 
 ## Setting up the server
 
-Open the ContactEngineApi folder
-Within the folder, access ContactEngineApi\ContactEngineApi\ContactEngineApi
-Open your CLI within the directory
-Run ‘dotnet run’
+1) Open the ContactEngineApi folder
+
+2) Within the folder, access ContactEngineApi\ContactEngineApi\ContactEngineApi
+
+3) Open your CLI within the directory
+
+4) un ‘dotnet run’
 
 ## Application logic 
 
-Server Not Running:
+# Server Not Running:
 
 If you haven’t run the server, the application will load and present the user with an error message stating that the server is currently down. The only field that will be available for use will be the SMS Provider field, however the Countries Select field will be disabled due to having no data to populate it with. As both of these fields are required, the form submission button will also be disabled.
 
-Server Running:
+# Server Running:
 
 If the server is running, the form will be available for full use. The SMS Provider field will allow entry of characters but will be set to invalid if any special characters (excluding whitespace) or numbers are entered. Providing this form value only has characters entered, it’ll be deemed valid.
 
