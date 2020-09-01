@@ -14,12 +14,12 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>{{strings.countryFieldLabel}}</mat-label>
-          <mat-select formControlName="countriesField" [attr.disabled]="countries.length === 0">
+          <mat-select formControlName="countriesField" [disabled]="countries.length === 0">
             <mat-option *ngFor="let country of countries" value="{{country.id}}">{{country.name}}</mat-option>
           </mat-select>
         </mat-form-field>
         <div class="row">
-          <button mat-raised-button [attr.disabled]="!smsForm.valid || pendingRequest" (click)="postSmsProviders()">{{strings.submitButton}}</button>
+          <button mat-raised-button [disabled]="!smsForm.valid || pendingRequest" (click)="postSmsProviders()">{{strings.submitButton}}</button>
         </div>
       </div>
     </form>
