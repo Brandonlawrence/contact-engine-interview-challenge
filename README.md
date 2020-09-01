@@ -40,14 +40,17 @@ The main aim was to leave my presentational components to deal with UI based fun
 
 When developing the application, I had several assumptions to simplify the project scope:
 
-The user will be redirected to the form page. No other navigation will be added.
-The SMS Providers will only contain characters and not special characters or numbers.
+1) The user will be redirected to the form page. No other navigation will be added.
+
+2) The SMS Providers will only contain characters and not special characters or numbers.
 
 ## Improvements For The Application
 
-If I had more time I would have implemented a dynamic form-builder which will reduce the sms-post-form and any other forms that could be added in the future. The form builder component will take form field and style configuration and generate the form based on this.
-Use a responsive breakpoint library (Bootstrap or preferably @angular/flex-layout) to dynamically add classes. This would reduce the use of media queries and allow me to add classes to breakpoints. 
-Added better error handling for each specific error response. Would use a switch case to dictate which error was returned and dynamically return a message. 
+1) If I had more time I would have implemented a dynamic form-builder which will reduce the sms-post-form and any other forms that could be added in the future. The form builder component will take form field and style configuration and generate the form based on this.
+
+2) Use a responsive breakpoint library (Bootstrap or preferably @angular/flex-layout) to dynamically add classes. This would reduce the use of media queries and allow me to add classes to breakpoints. 
+
+3) Added better error handling for each specific error response. Would use a switch case to dictate which error was returned and dynamically return a message. 
 
 ## Build
 
