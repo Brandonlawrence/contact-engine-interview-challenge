@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+h1, h2, h3, mat-form-field {
+  font-family: Roboto, "Helvetica Neue", sans-serif/* Replace with your custom font */, sans-serif !important;
+  /* Add !important to overwrite all elements */
+}
+
+html, body { height: 100%; background-color: indianred; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  background-color: indianred;
+  border-radius: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  mat-icon{
+    align-self: center;
+    transform: scale(2);
+  }
+}
+
+.form-success-dialog >  mat-dialog-container {
+  background-color: bisque;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
