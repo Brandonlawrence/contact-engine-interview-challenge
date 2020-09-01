@@ -1,0 +1,31 @@
+#success-icon {
+  color: darkseagreen;
+  transform: scale(5);
+}
+
+#success-header {
+  justify-self: center;
+  font-size: 1.5em;
+  padding-top: 10%;
+}
+
+#close-button {
+  width: 30%;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  #smsForm {
+    width: 80%;
+  }
+  #close-button {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #smsForm {
+    width: 30%;
+  }
+}

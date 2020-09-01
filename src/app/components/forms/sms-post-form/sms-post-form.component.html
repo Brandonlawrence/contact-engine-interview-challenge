@@ -1,0 +1,27 @@
+<div class="column-centered center-align-items">
+  <mat-card id="smsForm">
+    <form [formGroup]="smsForm">
+      <div class="column-space-evenly">
+        <div class="icon-container">
+          <mat-icon>sms</mat-icon>
+        </div>
+        <div class="row-centered">
+          <h2 id="smsFormTitle" class="center-align-self">{{strings.smsProviderFormTitle}}</h2>
+        </div>
+        <mat-form-field>
+          <mat-label>{{strings.providerFieldLabel}}</mat-label>
+          <input matInput formControlName="smsProviderField" maxlength="25">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>{{strings.countryFieldLabel}}</mat-label>
+          <mat-select formControlName="countriesField" [attr.disabled]="countries.length === 0">
+            <mat-option *ngFor="let country of countries" value="{{country.id}}">{{country.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div class="row">
+          <button mat-raised-button [attr.disabled]="!smsForm.valid || pendingRequest" (click)="postSmsProviders()">{{strings.submitButton}}</button>
+        </div>
+      </div>
+    </form>
+  </mat-card>
+</div>

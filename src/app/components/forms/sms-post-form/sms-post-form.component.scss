@@ -1,0 +1,83 @@
+mat-form-field {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+mat-icon {
+  color: white;
+}
+
+#smsFormTitle {
+  margin-top: 1em;
+}
+
+#smsForm {
+  background-color: bisque;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  mat-form-field{
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  #smsForm {
+    width: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #smsForm {
+    width: 40%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #smsForm {
+    width: 40%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  @media only screen and (max-width: 992px) {
+    mat-form-field {
+      margin-bottom: 0em;
+      margin-top: 0em;
+      font-size: 15px;
+    }
+    #smsForm {
+      width: 80%;
+    }
+    .icon-container {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    mat-form-field {
+      margin-bottom: 0em;
+      margin-top: 0em;
+      font-size: 12.5px;
+    }
+    #smsForm {
+      height: 80%;
+    }
+    #smsFormTitle {
+      font-size: 15px;
+    }
+    .icon-container {
+      width: 50px;
+      height: 50px;
+      mat-icon {
+        transform: scale(1);
+      }
+    }
+  }
+}
+

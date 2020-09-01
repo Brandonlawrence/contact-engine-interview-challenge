@@ -1,0 +1,9 @@
+<div class="container">
+<app-sms-post-form
+  (callGetCountries)="getCountries($event)"
+  (postSms)="postNewEntry($event)"
+  [countries]="countries"
+  [resetForm]="resetForm"
+  [pendingRequest]="pendingRequest">
+</app-sms-post-form>
+</div>
